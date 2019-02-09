@@ -1,0 +1,10 @@
+<div class="row mt-2">
+  <div class="col-12 title">
+    {{ titulo }}
+  </div>
+</div>
+<div class="row body pt-3 pb-3">
+  <div class="col-6 col-md-3 text-center" *ngFor="let prod of productos" (click)="handleClick(prod)">    
+    <img [src]="'assets/'+prod.imagen" class="img-thumbnail" />
+  </div>
+</div>
